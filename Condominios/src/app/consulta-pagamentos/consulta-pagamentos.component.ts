@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import jsPDF from 'jspdf';
 
 @Component({
   selector: 'app-consulta-pagamentos',
@@ -11,5 +12,14 @@ export class ConsultaPagamentosComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  gerarPDF() {
+    const pdf = new jsPDF();
+    const img = new Image();
+    img.src = 'assets/boleto.png'
+    pdf.addImage(img,'pns',1,1,210,280);
+    pdf.save('boleto.pdf')
+  }
+
 
 }

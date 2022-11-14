@@ -1,1 +1,28 @@
-<p>consulta-pagamentos works!</p>
+<mat-toolbar>
+    <span>Consulta pagamentos</span>
+</mat-toolbar>
+
+<table>
+    <tr>
+        <th>Boleto</th>
+        <th>Data Vnecimento</th>
+        <th>Data Pagamento</th>
+        <th>Ações</th>
+    </tr>
+    <tr>
+        <td>Taxa Extra - Reparo Elevador</td>
+        <td>12/05/2021</td>
+        <td></td>
+        <td><button mat-raised-button color="primary" (click)="gerarPDF">Gerar PDF</button></td>
+    </tr>
+    <tr>
+        <td>Boleto</td>
+        <td>05/06/2021</td>
+        <td></td>
+        <td><button mat-raised-button color="primary" (click)="gerarPDF">Gerar PDF</button></td>
+    </tr>
+
+    <div class="actions">
+        <button mat-raised-button color="primary" routerLink="/morador">Voltar</button>
+    </div>
+</table>

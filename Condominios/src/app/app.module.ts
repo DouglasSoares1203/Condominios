@@ -15,6 +15,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { CaixaComponent } from './caixa/caixa.component';
 import { ConsultaPagamentosComponent } from './consulta-pagamentos/consulta-pagamentos.component';
+import { CriarAvisoComponent } from './criar-aviso/criar-aviso.component';
+import { EntreContatoComponent } from './entre-contato/entre-contato.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { ConsultaPagamentosComponent } from './consulta-pagamentos/consulta-paga
     SindicoComponent,
     CaixaComponent,
     ConsultaPagamentosComponent,
+    CriarAvisoComponent,
+    EntreContatoComponent,
     
   ],
   imports: [
